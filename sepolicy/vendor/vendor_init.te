@@ -1,0 +1,2 @@
+# Allow vendor_init to write to /dev/blkio
+allow vendor_init blkio:file w_file_perms;
