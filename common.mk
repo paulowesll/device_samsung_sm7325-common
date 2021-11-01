@@ -222,7 +222,7 @@ PRODUCT_PACKAGES += \
 
 # Vibrator
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.vibrator.service
+    android.hardware.vibrator@1.3-service.sm7325
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
