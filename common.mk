@@ -223,6 +223,8 @@ PRODUCT_PACKAGES += \
     libOmxVdec \
     libOmxVenc \
     libstagefrighthw \
+    libstagefright_omx \
+    libstagefright_foundation
 
 # RIL
 PRODUCT_PACKAGES += \
