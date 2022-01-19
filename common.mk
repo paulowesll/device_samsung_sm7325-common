@@ -223,7 +223,7 @@ PRODUCT_PACKAGES += \
 
 # Vibrator
 PRODUCT_PACKAGES += \
-    android.hardware.vibrator@1.3-service.sm7325
+    android.hardware.vibrator-service.sm7325
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
