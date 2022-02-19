@@ -198,6 +198,9 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@2.1-service.samsung-multihal \
     android.frameworks.sensorservice@1.0
 
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
+
 # Telephony
 PRODUCT_PACKAGES += \
     ims-ext-common \

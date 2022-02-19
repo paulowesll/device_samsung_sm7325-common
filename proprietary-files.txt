@@ -1,4 +1,3 @@
-
 # ADSP
 vendor/bin/adsprpcd
 vendor/lib/libadsp_default_listener.so
