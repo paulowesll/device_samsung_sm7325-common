@@ -99,6 +99,7 @@ dalvik.vm.heapsize=512m
 dalvik.vm.heapstartsize=8m
 dalvik.vm.heaptargetutilization=0.75
 dalvik.vm.lockprof.threshold=500
+dalvik.vm.systemuicompilerfilter=speed
 persist.sys.dalvik.vm.lib.2=libart.so
 
 # Display
