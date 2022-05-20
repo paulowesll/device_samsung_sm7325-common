@@ -54,5 +54,5 @@ odm                                                     /odm                    
 /dev/block/bootdevice/by-name/dsp                       /vendor/dsp            ext4    ro,nosuid,nodev,barrier=1                            wait
 
 # VOLD:samsung/common/fstab_non_AB.samsung
-/devices/platform/soc/8804000.sdhci/mmc_host*           auto    vfat    defaults    voldmanaged=sdcard:auto
+/devices/platform/soc/8804000.sdhci/mmc_host* auto auto defaults wait,voldmanaged=sdcard:auto,encryptable=userdata
 /devices/platform/soc/*.ssusb/*.dwc3/xhci-hcd.*.auto*   auto    auto    defaults    voldmanaged=usb:auto
