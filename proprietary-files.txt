@@ -817,6 +817,7 @@ vendor/lib64/vendor.qti.ims.rcsconfig@1.1.so
 vendor/bin/hw/rild
 vendor/bin/secril_config_svc
 vendor/lib/libsecril-client.so
+vendor/lib64/libsec-ril.so|b184a495813888597ca64dcdb878d0cdb9ed1d6b
 vendor/lib64/libsecril-client.so
 vendor/lib64/libril_sem.so
 -vendor/lib/libril.so
