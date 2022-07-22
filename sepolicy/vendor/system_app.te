@@ -1,0 +1,3 @@
+# MDNIE
+allow system_app sysfs_mdnie_writable:dir search;
+allow system_app sysfs_mdnie_writable:file { open write getattr };
