@@ -372,6 +372,10 @@ PRODUCT_PACKAGES += \
     libavservices_minijail \
     libavservices_minijail.vendor
 
+# Neural networks
+PRODUCT_PACKAGES += \
+    android.hardware.neuralnetworks@1.3.vendor
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service.samsung-libperfmgr \
