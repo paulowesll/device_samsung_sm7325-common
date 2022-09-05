@@ -72,6 +72,7 @@ PRODUCT_PACKAGES += \
     android.hardware.soundtrigger@2.2-impl \
     audioadsprpcd \
     audio.bluetooth.default \
+    audio.primary.default \
     audio.primary.lahaina \
     audio.r_submix.default \
     audio.usb.default \
