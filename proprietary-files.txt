@@ -753,28 +753,53 @@ vendor/lib64/vendor.display.color@1.4.so
 vendor/lib64/vendor.display.color@1.5.so
 vendor/lib64/vendor.display.postproc@1.0.so
 
+# QMI from R
+vendor/bin/irsc_util|e5622ef70fc36ea66ccc8b70342959199456b27d
+vendor/bin/pd-mapper|0d06c1a411c3c78bcd4c5ef1bc40c8f72dd93d6b
+vendor/bin/qrtr-ns|fc4d55d2a2f6a9df7e8855ef2dbbfe0425e4f23d
+vendor/bin/ssr_setup|80a2d30836d554373664bbebddf66a34a934718a
+vendor/lib/libdsutils.so|7ab739a6fb7e7c7c622543a4f3e30d5f108aca82
+vendor/lib64/libdsutils.so|62515360de62d12ed128446527ff375e2b996edf
+vendor/lib/libqmi.so|a296aed81e917af1d5ee650ea7c949e2ba7e0f1a
+vendor/lib64/libqmi.so|45b30abbcc48cd9c8600c311d145c17f5b68635b
+vendor/lib/libqmi_cci.so|daf2ba5af60578b80e73fb70db1c0a3c516eb1bf
+vendor/lib64/libqmi_cci.so|bd5dd53924996384242a3b3f5d9176057e8b986b
+vendor/lib/libqmi_client_helper.so|40cd56b00beff6c6939376644d6efa82039595cd
+vendor/lib64/libqmi_client_helper.so|901fb800eb85c2e85051fe268116ff371cda0a7a
+vendor/lib/libqmi_client_qmux.so|e0916a37fae02d0ff7ec307425b03cd28934707c
+vendor/lib64/libqmi_client_qmux.so|53d8686a283c43ea4742d243d8e1bc0aaa4ad5c0
+vendor/lib/libqmi_csi.so|558698fbc6adf02c6d0c638966a1e06369211493
+vendor/lib64/libqmi_csi.so|971b626b2bcfcf87541724b1c4571fdb80da8a83
+vendor/lib/libqmiservices.so|dbbcc1a0ab7405da89eb93468ef522c300d671fb
+vendor/lib64/libqmiservices.so|ffa2f057f6a8277521c6e1e7c9548e9a48ff0767
+vendor/lib/libqdi.so|e7f5d6d3c62dc0dfad45a4e031acdd6d4e62f01e
+vendor/lib64/libqdi.so|26294588427c7b90fe95908c788e004f34286dc3
+vendor/lib/libqdp.so|a98d97e6433d8c3dde19a2d97f75b906aa55c85f
+vendor/lib64/libqdp.so|3e1988a93ce32c5910ec4f9b94cd4c954ca1184d
+vendor/lib/librilqmiservices-ext.so|ef6163ab09ec194922041cb371057649cef59d43
+vendor/lib64/librilqmiservices-ext.so|3f43543ce8bf21e73f05893979e21fc556175833
+
 # QMI
-vendor/bin/irsc_util
 vendor/lib/libdiag.so
 vendor/lib/libidl.so
 vendor/lib/libminkdescriptor.so
 vendor/lib/libminksocket.so
 vendor/lib/libqcci_legacy.so
-vendor/lib/libqdp.so
 vendor/lib/libqmi_common_so.so
-vendor/lib/libqmi_csi.so
 vendor/lib/libqmi_csvt_srvc.so
 vendor/lib/libqmi_encdec.so
 vendor/lib/libqmi_legacy.so
 vendor/lib64/libdiag.so
 vendor/lib64/libidl.so
+vendor/lib/libpdmapper.so
+vendor/lib64/libpdmapper.so
+vendor/lib/libpdnotifier.so
+vendor/lib64/libpdnotifier.so
 vendor/lib64/libminkdescriptor.so
 vendor/lib64/libminksocket.so
 vendor/lib64/libqcci_legacy.so
-vendor/lib64/libqdp.so
 vendor/lib64/libqmiextservices.so
 vendor/lib64/libqmi_common_so.so
-vendor/lib64/libqmi_csi.so
 vendor/lib64/libqmi_csvt_srvc.so
 vendor/lib64/libqmi_encdec.so
 vendor/lib64/libqmi_legacy.so
@@ -786,9 +811,6 @@ vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
 # Radio
 vendor/bin/qrtr-cfg
 vendor/bin/qrtr-lookup
-vendor/bin/qrtr-ns
-vendor/bin/tftp_server
-vendor/etc/data/dsi_config.xml
 vendor/lib/libmdmdetect.so
 vendor/lib/liboemaids_vendor.so
 vendor/lib/libqrtr.so
@@ -813,17 +835,58 @@ vendor/lib/vendor.qti.ims.rcsconfig@1.1.so
 vendor/lib64/vendor.qti.ims.rcsconfig@1.0.so
 vendor/lib64/vendor.qti.ims.rcsconfig@1.1.so
 
-# Ril
-vendor/bin/hw/rild
-vendor/bin/secril_config_svc
-vendor/lib/libsecril-client.so
+# Ril from R
+vendor/bin/hw/rild|05bc185c829f72ba0d2c95e00910a9790326d08a
+vendor/bin/adpl|162414e6cac8a19767299c1e2c2b884f60cb387e
+vendor/bin/ipacm-diag|45192b7bec9e658708e4b282cf7247877e37ef83
+vendor/bin/tftp_server|87658a9e2c80ba0ba3910a0fbe0d669e0b477845
+vendor/bin/rmt_storage|fe4f76b5be4e4b5bfed7389dcc177548a2d05ad6
+vendor/bin/ATFWD-daemon|ec343e63a65e7aef9a728d0ffdb6e12fb6b42c93
+vendor/etc/init/netmgrd.rc|3968aa11ebdebab2b5b53bbea1525e8cd5dfe837
+vendor/etc/data/dsi_config.xml|ea5973ae0bffbdfbffb84fc2348b260d53b03b02
+vendor/etc/data/netmgr_config.xml|ebd99ffce6bc051ee811478c4f866907cfb80046
+vendor/etc/locale/plmn_delta_eng.bin|642c0104ac67f587f07fa79ceab34ba43c4522fa
+vendor/etc/plmn_delta_hktw.bin|97a5a4747e8c32d463d8f26254257309b8a03a63
+vendor/etc/plmn_se13.bin|e1961fbbab7d8ef092b76a707b8364ba8c4ef012
+vendor/etc/mtu-conf.xml|febe82a2b92265b74e9ceb528f0c9da10a3b51e7
+vendor/etc/seccomp_policy/atfwd@2.0.policy|74fdb7d47bdb6d0cb06b13701a96a76c9171ab5d
+vendor/lib/libconfigdb.so|0daece85727ab4307e3e052a46a28ac43a7c41e7
+vendor/lib64/libconfigdb.so|ae44bdf163c251c4e844c81552a1aabcd5103b50
+vendor/lib/libdsi_netctrl.so|e4484f80c240e174b88cd515aa0ac59fb265fa0c
+vendor/lib64/libdsi_netctrl.so|c8188daa708bf3b177392b39d3e78889cb23df0b
+vendor/lib/libqcmaputils.so|3992dfc8c4a93b3c1206ccc30862334be196047e
+vendor/lib64/libqcmaputils.so|e9c2f1dfe54fa20a76b2cca648faa75a57cc3e81
+vendor/lib64/libengmode_client.so|654d042efdecd0605a0ef5ce129b4083b4f244e7
 vendor/lib64/libsec-ril.so|b184a495813888597ca64dcdb878d0cdb9ed1d6b
-vendor/lib64/libsecril-client.so
-vendor/lib64/libril_sem.so
--vendor/lib/libril.so
--vendor/lib64/libril.so
-vendor/etc/init/dataadpl.rc
+vendor/lib64/libsec-ril-dsds.so|b04b5500e1196d81cda86ea60593e50e37f77629
+vendor/lib/libsecril-client.so|6ef35be531c37c5b989e74da63b785c6166ecd7c
+vendor/lib64/libsecril-client.so|73aa52d0fa229afac41118ba944c03730439c55e
+vendor/lib/libril.so|2c4a35af898eebdb22498bb559c2731fa8b0fb0f
+vendor/lib64/libril.so|598af3cfd46639a6f89d50c44ca76ea79e9a99a1
+vendor/lib/libnetmgr.so|9e8fab36b22de6ab526c066da00a4989261454b8
+vendor/lib64/libnetmgr.so|7a30e846828764fe7c163d1f122c0b9e83d976f2
+vendor/lib/libnetmgr_common.so|f55d3e02ea168df91241d1857543ea5c978e930a
+vendor/lib64/libnetmgr_common.so|07e44423082920be758fc281e44a06240a0b501b
+vendor/lib64/liblqe.so|2992dcd03a32b248bc76ebecc2d202f7e80583a7
+vendor/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0.so|e8d2bb442bd883749f6fab1a06cb540350718c2c
 
+# Ril
+vendor/etc/init/ipacm-diag.rc
+vendor/etc/init/dataadpl.rc
+vendor/etc/init/vendor.qti.tftp.rc
+vendor/etc/init/vendor.qti.rmt_storage.rc
+vendor/etc/plmn_delta_usagsm.bin
+vendor/etc/plmn_delta.bin
+vendor/etc/locale/plmn_delta_zh-rCN.bin
+vendor/etc/locale/plmn_delta_zh-rHK.bin
+vendor/etc/locale/plmn_delta_zh-rTW.bin
+vendor/etc/plmn_delta_attaio.bin
+vendor/etc/sec_config
+vendor/etc/sec_config_oem
+vendor/etc/pdpcnt-conf.xml
+vendor/lib64/libvkmanager_vendor.so
+vendor/lib64/libril_sem.so
+vendor/etc/init/init.vendor.rilchip.rc
 
 # SCVE
 vendor/lib/libscveCommon.so
@@ -1182,16 +1245,13 @@ vendor/etc/init/init.ramplus.rc
 vendor/etc/init/init.time_daemon.rc
 vendor/etc/init/init.vendor.onebinary.rc
 vendor/etc/init/init.vendor.qti.spu@1.1-service.rc
-vendor/etc/init/init.vendor.rilchip.rc
 vendor/etc/init/init.vendor.rilcommon.rc
 vendor/etc/init/init.vendor.sensors.rc
 vendor/etc/init/init.vendor.sysfw.rc
 vendor/etc/init/init.vendor.wlan.rc
-vendor/etc/init/ipacm-diag.rc
 vendor/etc/init/ipa_fws.rc
 vendor/etc/init/lights-default-sec.rc
 vendor/etc/init/mppserver.rc
-vendor/etc/init/netmgrd.rc
 vendor/etc/init/pa_daemon_qsee.rc
 vendor/etc/init/qseecomd.rc
 vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc
@@ -1202,8 +1262,6 @@ vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc
 vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc
 vendor/etc/init/vendor.qti.hardware.secureprocessor@1.0.rc
 vendor/etc/init/vendor.qti.hardware.trustedui@1.0-service-qti.rc
-vendor/etc/init/vendor.qti.rmt_storage.rc
-vendor/etc/init/vendor.qti.tftp.rc
 vendor/etc/init/vendor.sensors.sscrpcd.rc
 vendor/etc/init/vendor_flash_recovery.rc
 vendor/etc/init/wsm-service.rc
@@ -1216,9 +1274,6 @@ vendor/etc/lm/prekill/prekill_4GB.data
 vendor/etc/lm/prekill/prekill_6GB.data
 vendor/etc/lm/PreKillFeature.xml
 vendor/etc/lm/sPLHFeature.xml
-vendor/etc/locale/plmn_delta_zh-rCN.bin
-vendor/etc/locale/plmn_delta_zh-rHK.bin
-vendor/etc/locale/plmn_delta_zh-rTW.bin
 vendor/etc/media/video_system_specs.json
 vendor/etc/media_lahaina/video_system_specs.json
 vendor/etc/media_yupik_iot/video_system_specs.json
@@ -1231,11 +1286,7 @@ vendor/etc/midas/SRIBMidas_aiHDR_Local_INT16_V430_sm7325_snpe1502.dlc
 vendor/etc/midas/SRIBMidas_aiMOIREREMOVE_Coarse_FP32_V800.caffemodel
 vendor/etc/midas/SRIBMidas_aiMOIREREMOVE_Fine_FP32_V800.caffemodel
 vendor/etc/midas/SRIBMidas_aiUNIFIED_FP16_V610.caffemodel
-vendor/etc/pdpcnt-conf.xml
 vendor/etc/playback_record_audio_policy_configuration.xml
-vendor/etc/plmn_delta.bin
-vendor/etc/plmn_delta_attaio.bin
-vendor/etc/plmn_delta_usagsm.bin
 vendor/etc/pwr/PowerFeatureConfig.xml
 vendor/etc/pwr/VideoPowerOptFeature.xml
 vendor/etc/saiv/aisolution_1.0/BrightModel-timestamp
@@ -1256,7 +1307,6 @@ vendor/etc/saiv/ld/regress_matrix_short_13pt.dat
 vendor/etc/saiv/ld/regress_matrix_short_35pt.dat
 vendor/etc/secnvm/k250a_00000200.img
 vendor/etc/sec_audio_volume_curve.xml
-vendor/etc/sec_config_oem
 vendor/etc/sensorhub_services.json
 vendor/etc/smomo_setting.xml
 vendor/etc/snapdragon_color_libs_config.xml
