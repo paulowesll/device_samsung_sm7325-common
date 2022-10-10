@@ -1,0 +1,20 @@
+on init
+    mkdir /metadata/logs 0775 system system
+    rm /metadata/logs/logcat.log
+	rm /metadata/logs/dmesg.log
+    start persistentLogging
+	start persistentDmesg
+
+on property:sys.boot_completed=1
+    stop persistentLogging
+	stop persistentDmesg
+
+service persistentLogging /system/bin/logcat -f /metadata/logs/logcat.log
+    user root
+    group root system log
+    disabled
+
+service persistentDmesg /system/bin/logcat -b kernel -f /metadata/logs/dmesg.log
+    user root
+    group root system log
+    disabled

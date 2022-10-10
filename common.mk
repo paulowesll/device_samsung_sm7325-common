@@ -55,6 +55,10 @@ PRODUCT_PACKAGES += \
     init.qcom.early_boot.sh \
     vendor_modprobe.sh
 
+# Logs
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/rootdir/etc/init/persistentLogging.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/persistentLogging.rc
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio.service \
