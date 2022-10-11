@@ -205,6 +205,10 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.deprecated@1.0 \
     android.hardware.radio.deprecated@1.0.vendor
 
+# Thermal
+PRODUCT_PACKAGES += \
+    android.hardware.thermal@1.0.vendor
+
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.3-service-qti
