@@ -1,4 +1,2 @@
 soong_namespace {
-    imports: [
-        "hardware/google/interfaces",
-    ],
+}
