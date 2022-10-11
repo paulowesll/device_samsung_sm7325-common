@@ -192,6 +192,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/recovery/root/init.recovery.qcom.rc:root/init.recovery.qcom.rc
 
+# RIL
+PRODUCT_PACKAGES += \
+    android.hardware.radio.deprecated@1.0 \
+    android.hardware.radio.deprecated@1.0.vendor
+
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.3-service-qti
