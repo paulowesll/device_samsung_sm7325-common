@@ -50,10 +50,21 @@ PRODUCT_PACKAGES += \
 # Vendor scripts
 PRODUCT_PACKAGES += \
     init.class_main.sh \
+    init.crda.sh \
+    init.kernel.post_boot-lahaina.sh \
+    init.kernel.post_boot-yupik.sh \
     init.qcom.post_boot.sh \
     init.qcom.sh \
+    init.qcom.class_core.sh \
     init.qcom.early_boot.sh \
+    init.qcom.sdio.sh \
+    init.qcom.usb.sh \
+    init.qti.chg_policy.sh \
+    init.qti.media.sh \
+    init.qti.qcv.sh \
+    init.qcom.sh \
     vendor_modprobe.sh
+    
 
 # Logs
 PRODUCT_COPY_FILES += \
