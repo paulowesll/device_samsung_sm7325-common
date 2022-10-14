@@ -62,10 +62,8 @@ PRODUCT_PACKAGES += \
     init.qti.chg_policy.sh \
     init.qti.media.sh \
     init.qti.qcv.sh \
-    init.qcom.sh \
     vendor_modprobe.sh
     
-
 # Logs
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/rootdir/etc/init/persistentLogging.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/persistentLogging.rc
@@ -146,10 +144,9 @@ PRODUCT_PACKAGES += \
 
 # DRM
 PRODUCT_PACKAGES += \
-    android.hardware.drm@1.0 \
-    android.hardware.drm@1.0.vendor \
     android.hardware.drm@1.3-service.clearkey \
-    libdrmclearkeyplugin
+    libdrmclearkeyplugin \
+    android.hardware.drm@1.3.vendor
 
 # Doze
 PRODUCT_PACKAGES += \
@@ -169,7 +166,7 @@ PRODUCT_COPY_FILES += \
 
 # Gnss
 PRODUCT_PACKAGES += \
-    android.hardware.gnss@1.0.vendor
+    android.hardware.gnss@2.1.vendor
 
 # Health
 PRODUCT_PACKAGES += \
@@ -218,14 +215,33 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/recovery/root/init.recovery.qcom.rc:root/init.recovery.qcom.rc
 
+# OMX
+PRODUCT_PACKAGES += \
+    android.hardware.media.omx@1.0-service \
+    libOmxAacEnc \
+    libOmxAmrEnc \
+    libOmxCore \
+    libOmxEvrcEnc \
+    libOmxG711Enc \
+    libOmxQcelp13Enc \
+    libOmxVdec \
+    libOmxVenc \
+    libstagefrighthw \
+
 # RIL
 PRODUCT_PACKAGES += \
-    android.hardware.radio.deprecated@1.0 \
-    android.hardware.radio.deprecated@1.0.vendor
+    android.hardware.radio@1.5.vendor \
+    android.hardware.radio.config@1.2.vendor \
+    android.hardware.radio.deprecated@1.0.vendor \
+    libxml2 \
+    librilutils \
+    librmnetctl \
+    secril_config_svc
 
 # Thermal
 PRODUCT_PACKAGES += \
-    android.hardware.thermal@1.0.vendor
+    android.hardware.thermal@2.0.vendor \
+    android.frameworks.cameraservice.service@2.1.vendor
 
 # USB
 PRODUCT_PACKAGES += \
@@ -238,7 +254,12 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service-qti
+    android.hardware.power-service.samsung-libperfmgr \
+    android.hardware.power@1.2.vendor
+
+# QMI
+PRODUCT_PACKAGES += \
+    libjson
 
 # Sensors
 PRODUCT_PACKAGES += \
