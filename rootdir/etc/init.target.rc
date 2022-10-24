@@ -149,11 +149,6 @@ on boot
     #Allow access to memory hotplug device attributes
     chown system system /sys/kernel/mem-offline/anon_migrate
 
-# For CDSP crash
-on property:ro.boot.debug_level=0x494d
-    setprop vendor.fastrpc.process.attrs 1
-    setprop vendor.fastrpc.debug.trace 1
-
 on property:vendor.display.lcd_density=560
    setprop dalvik.vm.heapgrowthlimit 256m
 
@@ -162,6 +157,11 @@ on property:vendor.display.lcd_density=640
 
 on boot && property:persist.vendor.usb.controller.default=*
     setprop vendor.usb.controller ${persist.vendor.usb.controller.default}
+
+on init && property:ro.boot.mode=charger
+    mount_all /vendor/etc/charger_fw_fstab.qti --early
+    write /sys/kernel/boot_adsp/boot 1
+    wait /sys/class/power_supply/battery
 
 on charger
     start vendor.power_off_alarm
@@ -223,6 +223,6 @@ service fan_control_turn_off /vendor/bin/fan_control 0
     user root
     disabled
     oneshot
-	
+
 on property:persist.vendor.radio.port_index=""
     setprop sys.usb.config adb
