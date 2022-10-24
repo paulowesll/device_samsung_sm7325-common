@@ -1264,7 +1264,6 @@ vendor/etc/playback_record_audio_policy_configuration.xml
 vendor/etc/plmn_delta.bin
 vendor/etc/plmn_delta_attaio.bin
 vendor/etc/plmn_delta_usagsm.bin
-vendor/etc/public.libraries.txt.backup
 vendor/etc/pwr/PowerFeatureConfig.xml
 vendor/etc/pwr/VideoPowerOptFeature.xml
 vendor/etc/saiv/aisolution_1.0/BrightModel-timestamp
