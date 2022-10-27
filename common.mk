@@ -67,19 +67,17 @@ PRODUCT_PACKAGES += \
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio.service \
-    android.hardware.audio@2.0-impl \
-    android.hardware.audio@4.0-impl \
-    android.hardware.audio@5.0-impl \
     android.hardware.audio@6.0-impl \
-    android.hardware.audio.effect@2.0-impl \
-    android.hardware.audio.effect@4.0-impl \
-    android.hardware.audio.effect@5.0-impl \
     android.hardware.audio.effect@6.0-impl \
-    android.hardware.soundtrigger@2.1-impl \
     android.hardware.soundtrigger@2.2-impl \
+    audioadsprpcd \
     audio.bluetooth.default \
+    audio.primary.lahaina \
     audio.r_submix.default \
-    audio.usb.default
+    audio.usb.default \
+    libaudioalsa \
+    libtinycompress \
+    sound_trigger.primary.lahaina
 
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
