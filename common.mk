@@ -306,11 +306,10 @@ PRODUCT_PACKAGES += \
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(COMMON_PATH)
-
-# VNDK
-PRODUCT_COPY_FILES += \
-    prebuilts/vndk/v30/arm64/arch-arm64-armv8-a/shared/vndk-sp/libutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libutils-v30.so
+    $(COMMON_PATH) \
+    hardware/google/interfaces \
+    hardware/google/pixel \
+    hardware/samsung/aidl/power-libperfmgr
 
 # VNDK
 PRODUCT_COPY_FILES += \
