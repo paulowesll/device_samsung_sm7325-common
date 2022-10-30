@@ -234,6 +234,10 @@ PRODUCT_PACKAGES += \
     libstagefright_omx \
     libstagefright_foundation
 
+# Perf
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/configs/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf
+
 # RIL
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.5.vendor \
