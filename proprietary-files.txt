@@ -459,10 +459,6 @@ vendor/firmware/evass.mdt
 vendor/firmware/msbtfw11.tlv
 vendor/firmware/nfc/sec_s3nrn4v_firmware.bin
 vendor/firmware/qca6750/qdss_trace_config.cfg
-vendor/firmware/wlan/qca_cld/qca6750/wlan_mac.bin
-vendor/firmware/wlan/qca_cld/wlan/WCNSS_qcom_cfg.ini
-vendor/firmware/wlan/qca_cld/wlan/wlan_mac.bin
-vendor/firmware/wlanmdsp.otaupdate
 
 # GPS
 vendor/bin/lowi-server
@@ -816,7 +812,6 @@ vendor/apex/com.samsung.android.wifi.broadcom.signed.apex
 vendor/bin/hw/samsung.software.media.c2@1.0-service
 vendor/bin/hw/vendor.samsung.hardware.hqm@1.0-service
 vendor/bin/hw/vendor.samsung.hardware.media.converter@1.0-service
-vendor/bin/hw/vendor.samsung.hardware.wifi@2.0-service
 vendor/bin/vendor.samsung.hardware.security.widevine.keyprov@1.0-service
 vendor/bin/vendor.samsung.hardware.security.wsm@1.0-service
 vendor/etc/init/hw/init.samsung.bsp.rc
@@ -827,13 +822,10 @@ vendor/etc/init/vendor.samsung.hardware.hqm@1.0-service.rc
 vendor/etc/init/vendor.samsung.hardware.media.converter@1.0-service.rc
 vendor/etc/init/vendor.samsung.hardware.security.widevine.keyprov@1.0-service.rc
 vendor/etc/init/vendor.samsung.hardware.thermal@1.0-service.rc
-vendor/etc/init/vendor.samsung.hardware.wifi@2.0-service.rc
 vendor/etc/seccomp_policy/samsung.software.media.c2-base-policy
 vendor/etc/seccomp_policy/samsung.software.media.c2-ext-policy
 -vendor/etc/vintf/manifest/vendor.samsung.hardware.hqm@1.0-manifest.xml
 -vendor/etc/vintf/manifest/vendor.samsung.hardware.thermal@1.0-manifest.xml
--vendor/etc/vintf/manifest/vendor.samsung.hardware.wifi.hostapd.xml
--vendor/etc/vintf/manifest/vendor.samsung.hardware.wifi@2.0-service.xml
 vendor/lib/libBeauty_v4.camera.samsung.so
 vendor/lib/libexifa.camera.samsung.so
 vendor/lib/libFacePreProcessing.camera.samsung.so
@@ -870,12 +862,6 @@ vendor/lib64/vendor.samsung.hardware.media.converter-V1-ndk_platform.so
 vendor/lib64/vendor.samsung.hardware.media.mpp-V1-ndk_platform.so
 vendor/lib64/vendor.samsung.hardware.security.widevine.keyprov@1.0.so
 vendor/lib64/vendor.samsung.hardware.thermal@1.0.so
-vendor/lib64/vendor.samsung.hardware.wifi.hostapd@3.0.so
-vendor/lib64/vendor.samsung.hardware.wifi.supplicant@3.0.so
-vendor/lib64/vendor.samsung.hardware.wifi.supplicant@3.1.so
-vendor/lib64/vendor.samsung.hardware.wifi@2.0.so
-vendor/lib64/vendor.samsung.hardware.wifi@2.1.so
-vendor/lib64/vendor.samsung.hardware.wifi@2.2.so
 
 # Sensor-configs
 vendor/etc/sensors/config/kodiak_default_sensors.json
@@ -1049,12 +1035,13 @@ vendor/lib/libwfdaac_vendor.so
 
 # WiFi
 vendor/bin/cnss_diag
-vendor/etc/init/android.hardware.wifi.supplicant-service.rc
-vendor/etc/init/android.hardware.wifi@1.0-service.rc
-vendor/etc/init/vendor.qti.hardware.wifi.wifilearner@1.0-service.rc
--vendor/etc/vintf/manifest/android.hardware.wifi.hostapd.xml
--vendor/etc/vintf/manifest/android.hardware.wifi@1.0-service.xml
-vendor/lib64/vendor.qti.hardware.wifi.wifilearner@1.0.so
+vendor/bin/hw/macloader
+vendor/lib/libqsap_sdk.so
+vendor/lib64/libqsap_sdk.so
+vendor/firmware/wlan/qca_cld/qca6750/wlan_mac.bin
+vendor/firmware/wlan/qca_cld/wlan/WCNSS_qcom_cfg.ini
+vendor/firmware/wlan/qca_cld/wlan/wlan_mac.bin
+vendor/firmware/wlanmdsp.otaupdate
 
 # Misc
 vendor/bin/add.pb
