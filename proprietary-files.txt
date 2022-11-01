@@ -557,8 +557,8 @@ vendor/lib64/libsdm-disp-vndapis.so
 vendor/lib64/libtinyxml2_1.so
 
 # HotwordEnrollment
--product/priv-app/HotwordEnrollmentOKGoogleEx3HEXAGON/HotwordEnrollmentOKGoogleEx3HEXAGON.apk.prof
--product/priv-app/HotwordEnrollmentXGoogleEx3HEXAGON/HotwordEnrollmentXGoogleEx3HEXAGON.apk.prof
+-product/priv-app/HotwordEnrollmentOKGoogleEx3HEXAGON/HotwordEnrollmentOKGoogleEx3HEXAGON.apk
+-product/priv-app/HotwordEnrollmentXGoogleEx3HEXAGON/HotwordEnrollmentXGoogleEx3HEXAGON.apk
 system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
 -system_ext/framework/com.android.hotwordenrollment.common.util.jar
 
@@ -780,6 +780,17 @@ vendor/lib/vendor.qti.ims.rcsconfig@1.0.so
 vendor/lib/vendor.qti.ims.rcsconfig@1.1.so
 vendor/lib64/vendor.qti.ims.rcsconfig@1.0.so
 vendor/lib64/vendor.qti.ims.rcsconfig@1.1.so
+
+# Ril
+vendor/bin/hw/rild
+vendor/bin/secril_config_svc
+vendor/lib/libsecril-client.so
+vendor/lib64/libsecril-client.so
+vendor/lib64/libril_sem.so
+-vendor/lib/libril.so
+-vendor/lib64/libril.so
+vendor/etc/init/dataadpl.rc
+
 
 # SCVE
 vendor/lib/libscveCommon.so
@@ -1070,7 +1081,6 @@ vendor/bin/getconf
 vendor/bin/hw/android.hardware.identity-service-qti
 vendor/bin/hw/mfgloader
 vendor/bin/hw/mppserver
-vendor/bin/hw/rild
 vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service
 vendor/bin/hw/vendor.qti.hardware.trustedui@1.0-service-qti
 vendor/bin/i2cdetect
@@ -1094,7 +1104,6 @@ vendor/bin/qcom-system-daemon
 vendor/bin/qdcmss
 vendor/bin/qsh_wifi_test
 vendor/bin/readelf
-vendor/bin/secril_config_svc
 vendor/bin/sec_nvm
 vendor/bin/spectraltool
 vendor/bin/sscrpcd
@@ -1134,7 +1143,6 @@ vendor/etc/init/boringssl_self_test.rc
 vendor/etc/init/btcoex_cont_config.rc
 vendor/etc/init/camera.unihal.rc
 vendor/etc/init/cass.rc
-vendor/etc/init/dataadpl.rc
 vendor/etc/init/dsmsca.rc
 vendor/etc/init/init.avb.rc
 vendor/etc/init/init.qdmastats.rc
@@ -1344,7 +1352,6 @@ vendor/lib/libsavscmn.so
 vendor/lib/libsecaudiocoreutils.so
 vendor/lib/libsecfr_engine.so
 vendor/lib/libsecnativefeature.so
-vendor/lib/libsecril-client.so
 vendor/lib/libsecure_storage.so
 vendor/lib/libSEF.quram.so
 vendor/lib/libsemnativecarrierfeature.so
@@ -1539,7 +1546,6 @@ vendor/lib64/libqtiidentitycredential.so
 vendor/lib64/libqti_vndfwk_detect.so
 vendor/lib64/librcmask.so
 vendor/lib64/libreffeature.so
-vendor/lib64/libril_sem.so
 vendor/lib64/libsaiv_BeautySolutionVideo.so
 vendor/lib64/libsavsac.so
 vendor/lib64/libsavscmn.so
@@ -1547,7 +1553,6 @@ vendor/lib64/libsecaudiocoreutils.so
 vendor/lib64/libSecC2ComponentStore.so
 vendor/lib64/libsecfr_engine.so
 vendor/lib64/libsecnativefeature.so
-vendor/lib64/libsecril-client.so
 vendor/lib64/libsecure_storage.so
 vendor/lib64/libSEF.quram.so
 vendor/lib64/libsemnativecarrierfeature.so

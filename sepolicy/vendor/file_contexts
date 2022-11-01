@@ -7,3 +7,4 @@
 /(vendor|system/vendor)/bin/hw/android.hardware.keymaster@4.0-service.samsung u:object_r:hal_keymaster_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.power-service\.samsung-libperfmgr u:object_r:hal_power_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android.hardware.vibrator-service.sm7325 u:object_r:hal_vibrator_default_exec:s0
+/(vendor|system/vendor)/bin/secril_config_svc u:object_r:vendor_secril_config_svc_exec:s0
