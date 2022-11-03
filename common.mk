@@ -45,6 +45,7 @@ PRODUCT_PACKAGES += \
     init.samsung.bsp.rc \
     init.samsung.display.rc \
     init.ramplus.rc \
+    init.vendor.sensors.rc \
     init.samsung.rc \
     init.target.rc \
     ueventd.qcom.rc
