@@ -37,12 +37,14 @@ AB_OTA_UPDATER := false
 PRODUCT_PACKAGES += \
     fstab.qcom \
     fstab.qcom.ramdisk \
+    fstab.ramplus \
     init.qcom.factory.rc \
     init.qcom.rc \
     init.qcom.usb.rc \
     init.qti.kernel.rc \
     init.samsung.bsp.rc \
     init.samsung.display.rc \
+    init.ramplus.rc \
     init.samsung.rc \
     init.target.rc \
     ueventd.qcom.rc
