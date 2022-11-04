@@ -151,7 +151,7 @@ service kernel-boot /vendor/bin/sh /vendor/bin/init.qti.kernel.sh
     disabled
     oneshot
 
-service kernel-post-boot /vendor/bin/sh /vendor/bin/init.kernel.post_boot.sh
+service kernel-post-boot /vendor/bin/sh /vendor/bin/init.kernel.post_boot-yupik.sh
     class core
     user root
     group root system wakelock graphics
