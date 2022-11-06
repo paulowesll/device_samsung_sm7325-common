@@ -4,10 +4,10 @@
 #include <string.h>
 
 enum device_variant {
-    VARIANT_A528B = 0,
-    VARIANT_A528N,
-    VARIANT_M526B,
+    VARIANT_A528N = 0,
+    VARIANT_A528B,
     VARIANT_M526BR,
+    VARIANT_M526B,
     VARIANT_MAX
 };
 
@@ -17,13 +17,13 @@ typedef struct {
 } variant;
 
 static const variant international_models = {
-    .model = "SM-M526BR",
-    .codename = "m52xq"
+    .model = "SM-A528N",
+    .codename = "a52xq"
 };
 
-static const variant international_models_a52s = {
-    .model = "SM-A528N",
-    .codename = "a52sxq"
+static const variant international_models_m52 = {
+    .model = "SM-M526BR",
+    .codename = "m52xq"
 };
 
 static const variant america_models = {
@@ -33,7 +33,7 @@ static const variant america_models = {
 
 static const variant america_models_m52 = {
     .model = "SM-M526B",
-    .codename = "m52"
+    .codename = "m52xq"
 };
 
 static const variant *all_variants[VARIANT_MAX] = {
@@ -44,3 +44,4 @@ static const variant *all_variants[VARIANT_MAX] = {
 };
 
 #endif // INIT_SEC_H
+
