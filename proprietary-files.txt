@@ -633,21 +633,8 @@ vendor/lib/libOmxCore.so
 -vendor/lib64/libplatformconfig.so
 
 # NFC
-vendor/bin/hw/sec.android.hardware.nfc@1.2-service
-vendor/bin/nqnfcinfo
-vendor/etc/init/init.nfc.samsung.rc
-vendor/etc/init/sec.android.hardware.nfc@1.2-service.rc
-vendor/etc/libnfc-mtp-SN100.conf
-vendor/etc/libnfc-mtp-SN100_38_4MHZ.conf
-vendor/etc/libnfc-qrd-SN100.conf
-vendor/etc/libnfc-qrd-SN100_38_4MHZ.conf
-vendor/etc/libnfc-sec-vendor.conf
 vendor/etc/nfc/sec_s3nrn4v_swreg.bin
 vendor/etc/permissions/com.nxp.mifare.xml
--vendor/etc/vintf/manifest/sec.android.hardware.nfc@1.2-service.xml
-vendor/lib64/libNfcProperties.so
-vendor/lib64/nfc_nci_sec.so
-vendor/lib64/vendor.samsung.hardware.nfc@2.0.so
 
 # Pasrmanager
 vendor/lib/vendor.qti.memory.pasrmanager@1.0.so
@@ -1356,7 +1343,6 @@ vendor/lib/libsecure_storage.so
 vendor/lib/libSEF.quram.so
 vendor/lib/libsemnativecarrierfeature.so
 vendor/lib/libsmartfocus_interface.so
-vendor/lib/libsn100u_fw.so
 vendor/lib/libsnapdragoncolor-qdcm.so
 vendor/lib/libsnap_vndk.so
 vendor/lib/libsns_registry_skel.so
