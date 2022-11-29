@@ -1156,7 +1156,6 @@ vendor/etc/init/init.vendor.sensors.rc
 vendor/etc/init/init.vendor.sysfw.rc
 vendor/etc/init/init.vendor.wlan.rc
 vendor/etc/init/ipacm-diag.rc
-vendor/etc/init/ipacm.rc
 vendor/etc/init/ipa_fws.rc
 vendor/etc/init/lights-default-sec.rc
 vendor/etc/init/mppserver.rc
