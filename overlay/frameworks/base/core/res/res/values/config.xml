@@ -1351,4 +1351,7 @@
          that have a HWC implementation that can apply the matrix passed to setColorTransform
          without impacting power, performance, and app compatibility (e.g. protected content). -->
     <bool name="config_nightDisplayAvailable">true</bool>
+
+    <!-- Whether device supports double tap to wake -->
+    <bool name="config_supportDoubleTapWake">true</bool>
 </resources>
