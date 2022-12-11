@@ -40,6 +40,7 @@ PRODUCT_PACKAGES += \
     fstab.ramplus \
     init.qcom.factory.rc \
     init.qcom.rc \
+    init.fingerprint.rc \
     init.qcom.usb.rc \
     init.qti.kernel.rc \
     init.samsung.bsp.rc \
