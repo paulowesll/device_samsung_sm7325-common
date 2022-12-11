@@ -404,22 +404,12 @@ vendor/lib/libfidoauthnr_v2.so
 vendor/lib64/libfidoauthnr_v2.so
 
 # Fingerprint
-vendor/bin/hw/vendor.samsung.hardware.biometrics.face@2.0-service
-vendor/bin/hw/vendor.samsung.hardware.biometrics.fingerprint@3.0-service
-vendor/etc/init/fingerprint_common.rc
-vendor/etc/init/init.fingerprint.rc
-vendor/etc/init/vendor.samsung.hardware.biometrics.face@2.0-service.rc
-vendor/etc/init/vendor.samsung.hardware.biometrics.fingerprint@3.0-service.rc
+vendor/lib/libsynaFpSensorTestNwd.so
+vendor/lib64/libsynaFpSensorTestNwd.so
 vendor/lib/libgf_in_system_lib.so
 vendor/lib/libqfp_sensortest.so
-vendor/lib/vendor.qti.hardware.fingerprint@1.0.so
-vendor/lib/vendor.samsung.hardware.biometrics.face@2.0.so
-vendor/lib64/hw/fingerprint.default.so
 vendor/lib64/libgf_in_system_lib.so
 vendor/lib64/libqfp_sensortest.so
-vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
-vendor/lib64/vendor.samsung.hardware.biometrics.face@2.0.so
-vendor/lib64/vendor.samsung.hardware.biometrics.fingerprint@3.0.so
 
 # Firmware
 vendor/firmware/a660_gmu.bin
@@ -1384,7 +1374,6 @@ vendor/lib/libstagefright_soft_vorbisdec.so
 vendor/lib/libstagefright_soft_vpxdec.so
 vendor/lib/libstagefright_soft_vpxenc.so
 vendor/lib/libstork_shared.so
-vendor/lib/libsynaFpSensorTestNwd.so
 vendor/lib/libsynx.so
 vendor/lib/libtad.so
 vendor/lib/libtfestriping.so
@@ -1566,7 +1555,6 @@ vendor/lib64/libSSM_AutoTrigger.so
 vendor/lib64/libstork_shared.so
 vendor/lib64/libsume_core.so
 vendor/lib64/libsume_imgp.so
-vendor/lib64/libsynaFpSensorTestNwd.so
 vendor/lib64/libsynx.so
 vendor/lib64/libtad.so
 vendor/lib64/libtfestriping.so
