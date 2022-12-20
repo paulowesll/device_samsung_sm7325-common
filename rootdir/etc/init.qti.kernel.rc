@@ -92,17 +92,17 @@ on boot
     chown root system /sys/kernel/dload/dload_mode
     chmod 0660 /sys/kernel/dload/dload_mode
 
-    # set the io-scheduler to bfq on all mq support devices
-    # write /sys/block/sda/queue/scheduler bfq
-    # write /sys/block/sdb/queue/scheduler bfq
-    # write /sys/block/sdc/queue/scheduler bfq
-    # write /sys/block/sdd/queue/scheduler bfq
-    # write /sys/block/sde/queue/scheduler bfq
-    # write /sys/block/sdf/queue/scheduler bfq
-    # write /sys/block/sdg/queue/scheduler bfq
-    # write /sys/block/sdh/queue/scheduler bfq
-    # write /sys/class/block/mmcblk0/queue/scheduler bfq
-    # write /sys/class/block/mmcblk1/queue/scheduler bfq
+    # set the io-scheduler to ssg on all mq support devices
+    write /sys/block/sda/queue/scheduler ssg
+    write /sys/block/sdb/queue/scheduler ssg
+    write /sys/block/sdc/queue/scheduler ssg
+    write /sys/block/sdd/queue/scheduler ssg
+    write /sys/block/sde/queue/scheduler ssg
+    write /sys/block/sdf/queue/scheduler ssg
+    write /sys/block/sdg/queue/scheduler ssg
+    write /sys/block/sdh/queue/scheduler ssg
+    write /sys/class/block/mmcblk0/queue/scheduler ssg
+    write /sys/class/block/mmcblk1/queue/scheduler ssg
 
     # update io-scheduler tunables
     # write /sys/block/sda/queue/iosched/slice_idle 0
