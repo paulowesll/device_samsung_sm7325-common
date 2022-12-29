@@ -82,7 +82,14 @@ PRODUCT_PACKAGES += \
     audio.usb.default \
     libaudioalsa \
     libtinycompress \
-    sound_trigger.primary.lahaina
+    sound_trigger.primary.lahaina \
+    libqcomvisualizer \
+    libqcomvoiceprocessing \
+    libqcompostprocbundle \
+    libvolumelistener \
+    SamsungDAP
+
+TARGET_EXCLUDES_AUDIOFX := true
 
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
