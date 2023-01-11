@@ -590,7 +590,31 @@ vendor/lib/libgcs-osal.so
 vendor/lib/libsmwrapper.so
 vendor/lib64/libgcs-osal.so
 
+# Media (Codec2)
+vendor/bin/hw/vendor.qti.media.c2@1.0-service
+vendor/etc/init/vendor.qti.media.c2@1.0-service.rc
+vendor/etc/seccomp_policy/codec2.vendor.base-arm.policy
+vendor/etc/seccomp_policy/codec2.vendor.ext-arm.policy
+
+# Media configs
+vendor/etc/media_codecs_lahaina.xml
+vendor/etc/media_codecs_lahaina_vendor.xml
+vendor/etc/media_codecs_performance_lahaina.xml
+vendor/etc/media_codecs_performance_lahaina_vendor.xml
+vendor/etc/media_codecs_performance_yupik_iot.xml
+vendor/etc/media_codecs_performance_yupik_v0.xml
+vendor/etc/media_codecs_vendor_audio.xml
+vendor/etc/media_codecs_wfd.xml
+vendor/etc/media_codecs_yupik_iot.xml
+vendor/etc/media_codecs_yupik_v1.xml
+vendor/etc/media_profiles_lahaina.xml
+vendor/etc/media_profiles_lahaina_vendor.xml
+vendor/etc/media_profiles_vendor.xml
+vendor/etc/media_profiles_yupik_iot.xml
+
 # Media
+vendor/bin/hw/android.hardware.media.omx@1.0-service
+vendor/etc/init/android.hardware.media.omx@1.0-service.rc
 vendor/lib/libAlacSwDec.so
 vendor/lib/libApeSwDec.so
 vendor/lib/libdsd2pcm.so
@@ -828,7 +852,6 @@ vendor/lib64/libsubsystem_control.so
 # Samsung
 vendor/apex/com.samsung.android.camera.unihal.signed.apex
 vendor/apex/com.samsung.android.wifi.broadcom.signed.apex
-vendor/bin/hw/samsung.software.media.c2@1.0-service
 vendor/bin/hw/vendor.samsung.hardware.hqm@1.0-service
 vendor/bin/hw/vendor.samsung.hardware.media.converter@1.0-service
 vendor/bin/vendor.samsung.hardware.security.widevine.keyprov@1.0-service
@@ -836,13 +859,10 @@ vendor/bin/vendor.samsung.hardware.security.wsm@1.0-service
 vendor/etc/init/hw/init.samsung.bsp.rc
 vendor/etc/init/hw/init.samsung.rc
 vendor/etc/init/hw/init.samsung.svcled.rc
-vendor/etc/init/samsung.software.media.c2@1.0-service.rc
 vendor/etc/init/vendor.samsung.hardware.hqm@1.0-service.rc
 vendor/etc/init/vendor.samsung.hardware.media.converter@1.0-service.rc
 vendor/etc/init/vendor.samsung.hardware.security.widevine.keyprov@1.0-service.rc
 vendor/etc/init/vendor.samsung.hardware.thermal@1.0-service.rc
-vendor/etc/seccomp_policy/samsung.software.media.c2-base-policy
-vendor/etc/seccomp_policy/samsung.software.media.c2-ext-policy
 -vendor/etc/vintf/manifest/vendor.samsung.hardware.hqm@1.0-manifest.xml
 -vendor/etc/vintf/manifest/vendor.samsung.hardware.thermal@1.0-manifest.xml
 vendor/lib/libBeauty_v4.camera.samsung.so

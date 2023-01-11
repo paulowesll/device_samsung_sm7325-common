@@ -1129,31 +1129,9 @@
         </interface>
     </hal>
     <hal format="aidl" optional="true">
-        <name>vendor.samsung.hardware.media.converter</name>
-        <interface>
-            <name>ISehColorConverterStore</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="aidl" optional="true">
-        <name>vendor.samsung.hardware.media.converter</name>
-        <interface>
-            <name>ISehColorConverterStore</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="aidl" optional="true">
         <name>vendor.samsung.hardware.media.mpp</name>
         <interface>
             <name>ISehMppStore</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.samsung.hardware.miscpower</name>
-        <version>2.0</version>
-        <interface>
-            <name>ISehMiscPower</name>
             <instance>default</instance>
         </interface>
     </hal>
