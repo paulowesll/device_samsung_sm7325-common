@@ -185,6 +185,10 @@
             <name>IGloveMode</name>
             <instance>default</instance>
         </interface>
+        <interface>
+            <name>ITouchscreenGesture</name>
+            <instance>default</instance>
+        </interface>
     </hal>
     <hal format="hidl" optional="true">
         <name>android.hardware.wifi.supplicant</name>
