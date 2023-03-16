@@ -182,7 +182,7 @@ echo 0 > /proc/sys/kernel/sched_coloc_busy_hysteresis_enable_cpus
 echo 240 > /proc/sys/kernel/sched_busy_hysteresis_enable_cpus
 # cpuset parameters
 echo 0-1 > /dev/cpuset/background/cpus
-echo 0-3 > /dev/cpuset/system-background/cpus
+echo 0-2 > /dev/cpuset/system-background/cpus
 
 # Turn off scheduler boost at the end
 echo 0 > /proc/sys/kernel/sched_boost
