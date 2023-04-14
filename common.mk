@@ -48,7 +48,6 @@ PRODUCT_PACKAGES += \
     init.ramplus.rc \
     init.vendor.sensors.rc \
     init.samsung.rc \
-    init.nfc.samsung.rc \
     init.target.rc \
     ueventd.qcom.rc
 
@@ -60,7 +59,6 @@ PRODUCT_PACKAGES += \
     init.kernel.post_boot-yupik.sh \
     init.qcom.post_boot.sh \
     init.qcom.sh \
-    init.qcom.class_core.sh \
     init.qcom.early_boot.sh \
     init.qcom.sdio.sh \
     init.qcom.usb.sh \
@@ -77,12 +75,9 @@ PRODUCT_PACKAGES += \
     android.hardware.soundtrigger@2.3-impl \
     audioadsprpcd \
     audio.primary.default \
-    audio.primary.lahaina \
     audio.r_submix.default \
     audio.usb.default \
-    libaudioalsa \
     libtinycompress \
-    sound_trigger.primary.lahaina \
     libqcomvisualizer \
     libqcomvoiceprocessing \
     libqcompostprocbundle \
@@ -111,7 +106,6 @@ PRODUCT_COPY_FILES += \
 # Bluetooth
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.bluetooth_audio@2.0.vendor \
-    com.qualcomm.qti.bluetooth_audio@1.0.vendor \
     audio.bluetooth.default \
     android.hardware.bluetooth.audio@2.0-impl \
     android.hardware.bluetooth@1.0.vendor
@@ -261,6 +255,7 @@ PRODUCT_PACKAGES += \
     Tag
 
 PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/rootdir/etc/init.nfc.samsung.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init.nfc.samsung.rc \
     $(COMMON_PATH)/configs/nfc/libnfc-mtp-SN100_38_4MHZ.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-mtp-SN100_38_4MHZ.conf \
     $(COMMON_PATH)/configs/nfc/libnfc-mtp-SN100.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-mtp-SN100.conf \
     $(COMMON_PATH)/configs/nfc/libnfc-qrd-SN100_38_4MHZ.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-qrd-SN100_38_4MHZ.conf \
@@ -330,8 +325,6 @@ PRODUCT_PACKAGES += \
     libOmxEvrcEnc \
     libOmxG711Enc \
     libOmxQcelp13Enc \
-    libOmxVdec \
-    libOmxVenc \
     libstagefrighthw \
     libstagefright_omx \
     libstagefright_foundation
