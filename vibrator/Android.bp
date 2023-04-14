@@ -1,14 +1,14 @@
 //
-// Copyright (C) 2022 The LineageOS Project
+// Copyright (C) 2021 The LineageOS Project
 //
 // SPDX-License-Identifier: Apache-2.0
 //
 
 cc_binary {
-    name: "android.hardware.vibrator-service.sm7325",
+    name: "android.hardware.vibrator-service.samsung.sm7325",
     relative_install_path: "hw",
-    init_rc: ["android.hardware.vibrator-service.sm7325.rc"],
-    vintf_fragments: ["android.hardware.vibrator-service.sm7325.xml"],
+    init_rc: ["android.hardware.vibrator-service.samsung.sm7325.rc"],
+    vintf_fragments: ["android.hardware.vibrator-service.samsung.sm7325.xml"],
     srcs: [
         "Vibrator.cpp",
         "service.cpp",
@@ -16,7 +16,7 @@ cc_binary {
     shared_libs: [
         "libbase",
         "libbinder_ndk",
-        "android.hardware.vibrator-V2-ndk_platform",
+        "android.hardware.vibrator-V2-ndk",
     ],
     vendor: true,
 }
