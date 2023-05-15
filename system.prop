@@ -14,3 +14,6 @@ ro.config.sdha_apps_bg_min=8
 
 # Vsync
 debug.cpurend.vsync=false
+
+# Force triple frame buffers
+ro.surface_flinger.max_frame_buffer_acquired_buffers=3
