@@ -1189,6 +1189,10 @@ vendor/lib64/sensors.grip.so
 vendor/lib64/sensors.ssc.so
 vendor/lib64/libnanopb.so
 
+# Task Profiles
+vendor/etc/cgroups.json
+vendor/etc/task_profiles.json
+
 # Thermal
 vendor/bin/thermal-engine
 vendor/etc/init/init_thermal-engine.rc
