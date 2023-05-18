@@ -1,2 +1,27 @@
 # RIL
 ro.vendor.qti.va_aosp.support=1
+
+# Better Ram
+ro.config.fha_enable=true
+ro.sys.fw.bg_apps_limit=32
+ro.config.dha_cached_max=16
+ro.config.dha_empty_max=42
+ro.config.dha_empty_init=32
+ro.config.dha_lmk_scale=0.545
+ro.config.dha_th_rate=2.3
+ro.config.sdha_apps_bg_max=64
+ro.config.sdha_apps_bg_min=8
+
+# Vsync
+debug.cpurend.vsync=false
+
+# Force triple frame buffers
+ro.surface_flinger.max_frame_buffer_acquired_buffers=3
+
+# settings_provider_model
+persist.sys.fflag.override.settings_provider_model=false
+
+# SkiaGL Threaded
+debug.renderengine.backend=skiaglthreaded
+debug.hwui.renderer=skiagl
+renderthread.skia.reduceopstasksplitting=true 
